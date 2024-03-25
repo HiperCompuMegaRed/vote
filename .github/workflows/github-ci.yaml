@@ -17,9 +17,8 @@ jobs:
       projectName: 'hipercompumegared'
 #-------------------------------------------------------------------------------------------------#
 ## Features  -------------------------------------------------------------------------------------#
-      approvals_runner: 'arc_shamanops'
     # Approvals
-      shamanopsBusinessApprovers: 'mmora@shamanops.com'
+      shamanopsBusinessApprovers: 'vosorio@vousys.com'
       shamanopsTechnicalApprovers: 'jroca@shamanops.com'
       shamanopsBusinessApproversMinimalProd: '1'
       shamanopsTechnicalApproversMinimalProd: '1'
