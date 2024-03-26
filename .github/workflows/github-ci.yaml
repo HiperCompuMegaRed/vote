@@ -18,7 +18,7 @@ jobs:
 #-------------------------------------------------------------------------------------------------#
 ## Features  -------------------------------------------------------------------------------------#
     # Approvals
-      shamanopsBusinessApprovers: 'vosorio@vousys.com'
+      shamanopsBusinessApprovers: 'rocajp@gmail.com'
       shamanopsTechnicalApprovers: 'jroca@shamanops.com'
       shamanopsBusinessApproversMinimalProd: '1'
       shamanopsTechnicalApproversMinimalProd: '1'
