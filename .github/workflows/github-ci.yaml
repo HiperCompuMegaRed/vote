@@ -21,7 +21,7 @@ jobs:
       shamanopsTechnicalApprovers: 'msmora@gmail.com'
     # Dynamic Envs
       shamanopsDynamicEnvsEnabled: 'true'
-      shamanopsDynamicEnvs: 'qa'
+      shamanopsDynamicEnvs: 'qa, audit'
       shamanopsTechnicalApproversMinimalDynamicEnvs: '1'
       shamanopsBusinessApproversMinimalDynamicEnvs: '1'
       shamanopsApprovalsDynamicEnvs: 'true'
