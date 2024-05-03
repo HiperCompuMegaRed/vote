@@ -24,7 +24,7 @@ jobs:
       shamanopsDynamicEnvs: 'qa, audit'
       shamanopsTechnicalApproversMinimalDynamicEnvs: '1'
       shamanopsBusinessApproversMinimalDynamicEnvs: '1'
-      #shamanopsApprovalsDynamicEnvs: 'true'
+      shamanopsApprovalsDynamicEnvs: 'true'
     # Disable all
       shamanopsApprovalsProd: 'false'
       security_check_enabled: 'false'
