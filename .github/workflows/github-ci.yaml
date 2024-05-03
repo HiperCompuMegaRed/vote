@@ -19,15 +19,12 @@ jobs:
 ## Features  -------------------------------------------------------------------------------------#
       shamanopsBusinessApprovers: 'mmora@shamanops.com'
       shamanopsTechnicalApprovers: 'msmora@gmail.com'
- 
     # Dynamic Envs
       shamanopsDynamicEnvsEnabled: 'true'
       shamanopsDynamicEnvs: 'qa'
-      # approvals
       shamanopsTechnicalApproversMinimalDynamicEnvs: '1'
       shamanopsBusinessApproversMinimalDynamicEnvs: '1'
       shamanopsApprovalsDynamicEnvs: 'true'
- 
       shamanopsBusinessApproversMinimalProd: '1'
       shamanopsTechnicalApproversMinimalProd: '1'
     # Disable all
