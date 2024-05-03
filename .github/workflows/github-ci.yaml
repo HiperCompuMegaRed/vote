@@ -8,20 +8,31 @@ on:
     branches: [ "main" ]
 jobs:
   shamanops:
-    uses: shamanops/resources/.github/workflows/base-cloud-stable.yaml@main
+    uses: shamanops/resources/.github/workflows/base-cloud-rc.yaml@main
     with:
     # Environments:
     # full-with-drp (dev/stg/prod/drp) | full (dev/stg/prod) | mid (stg/prod) | minimal (prod)
-      environments: 'minimal'
+      environments: 'full'
     # Project
       projectName: 'hipercompumegared'
 #-------------------------------------------------------------------------------------------------#
 ## Features  -------------------------------------------------------------------------------------#
-    # Approvals
-      shamanopsBusinessApprovers: 'rocajp@gmail.com'
-      shamanopsTechnicalApprovers: 'juliana@tuten.com.ar'
+      shamanopsBusinessApprovers: 'mmora@shamanops.com'
+      shamanopsTechnicalApprovers: 'msmora@gmail.com'
+ 
+    # Dynamic Envs
+      shamanopsDynamicEnvsEnabled: 'true'
+      shamanopsDynamicEnvs: 'qa'
+      # approvals
+      shamanopsTechnicalApproversMinimalDynamicEnvs: '1'
+      shamanopsBusinessApproversMinimalDynamicEnvs: '1'
+      shamanopsApprovalsDynamicEnvs: 'true'
+ 
       shamanopsBusinessApproversMinimalProd: '1'
       shamanopsTechnicalApproversMinimalProd: '1'
+    # Disable all
+      shamanopsApprovalsProd: 'false'
+      security_check_enabled: 'false'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
@@ -29,6 +40,7 @@ jobs:
       shamanops_argocd_stg_token: ${{ secrets.shamanops_argocd_stg_token }}
       shamanops_argocd_prod_token: ${{ secrets.shamanops_argocd_prod_token }}
       shamanops_argocd_drp_token: ${{ secrets.shamanops_argocd_drp_token }}
+      shamanops_argocd_dynenv_token: ${{ secrets.shamanops_argocd_dynenv_token }}
       shamanops_manifest_repository_token: ${{ secrets.shamanops_manifest_repository_token }}
       shamanops_chat_webhook: ${{ secrets.shamanops_chat_webhook }}
       shamanops_registry_password: ${{ secrets.shamanops_registry_password }}
