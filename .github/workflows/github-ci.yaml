@@ -20,14 +20,14 @@ jobs:
       shamanopsBusinessApprovers: 'mmora@shamanops.com'
       shamanopsTechnicalApprovers: 'msmora@gmail.com'
     # Dynamic Envs
-      shamanopsDynamicEnvsEnabled: 'true'
+      shamanopsDynamicEnvsEnabled: 'false'
       shamanopsDynamicEnvs: 'qa, audit'
       shamanopsTechnicalApproversMinimalDynamicEnvs: '1'
       shamanopsBusinessApproversMinimalDynamicEnvs: '1'
       shamanopsApprovalsDynamicEnvs: 'true'
     # Disable all
       shamanopsApprovalsProd: 'false'
-      security_check_enabled: 'false'
+      security_check_enabled: 'true'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
