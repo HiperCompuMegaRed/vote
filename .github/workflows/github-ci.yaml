@@ -12,7 +12,7 @@ jobs:
     with:
     # Environments:
     # full-with-drp (dev/stg/prod/drp) | full (dev/stg/prod) | mid (stg/prod) | minimal (prod)
-      environments: 'full'
+      environments: 'minimal'
     # Project
       projectName: 'hipercompumegared'
 #-------------------------------------------------------------------------------------------------#
@@ -21,7 +21,7 @@ jobs:
       shamanopsBusinessApprovers: 'mmora@shamanops.com'
       shamanopsTechnicalApprovers: 'msmora@gmail.com'
     # Dynamic Envs
-      shamanopsDynamicEnvsEnabled: 'true'
+      shamanopsDynamicEnvsEnabled: 'false'
       shamanopsDynamicEnvs: 'qa'
       shamanopsTechnicalApproversMinimalDynamicEnvs: '1'
       shamanopsBusinessApproversMinimalDynamicEnvs: '1'
