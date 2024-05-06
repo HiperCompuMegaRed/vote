@@ -17,11 +17,12 @@ jobs:
       projectName: 'hipercompumegared'
 #-------------------------------------------------------------------------------------------------#
 ## Features  -------------------------------------------------------------------------------------#
+      db_versioning_enabled: 'true'
       shamanopsBusinessApprovers: 'mmora@shamanops.com'
       shamanopsTechnicalApprovers: 'msmora@gmail.com'
     # Dynamic Envs
-      shamanopsDynamicEnvsEnabled: 'false'
-      shamanopsDynamicEnvs: 'qa, audit'
+      shamanopsDynamicEnvsEnabled: 'true'
+      shamanopsDynamicEnvs: 'qa'
       shamanopsTechnicalApproversMinimalDynamicEnvs: '1'
       shamanopsBusinessApproversMinimalDynamicEnvs: '1'
       shamanopsApprovalsDynamicEnvs: 'true'
