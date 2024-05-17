@@ -12,13 +12,21 @@ jobs:
     with:
     # Environments:
     # full-with-drp (dev/stg/prod/drp) | full (dev/stg/prod) | mid (stg/prod) | minimal (prod)
-      environments: 'full'
+      environments: 'mid'
     # Project
       projectName: 'hipercompumegared'
 #-------------------------------------------------------------------------------------------------#
 ## Features  -------------------------------------------------------------------------------------#
       shamanopsBusinessApprovers: 'jroca@shamanops.com'
-      shamanopsTechnicalApprovers: 'rocajp@gmail.com'
+      shamanopsTechnicalApprovers: 'flifschitz@shamanops.com'
+   # Enable Dynamics Enviroments
+      shamanopsDynamicEnvsEnabled: 'true'
+    # Dynamics Enviroments list
+      shamanopsDynamicEnvs: 'qa, audit'
+    # Dynamics Enviroments Approvals
+      shamanopsApprovalsDynamicEnvs: 'true'
+      shamanopsBusinessApproversMinimalDynamicEnvs: '1'
+      shamanopsTechnicalApproversMinimalDynamicEnvs: '1'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
@@ -30,5 +38,6 @@ jobs:
       shamanops_chat_webhook: ${{ secrets.shamanops_chat_webhook }}
       shamanops_registry_password: ${{ secrets.shamanops_registry_password }}
       shamanops_dockerfile_token: ${{ secrets.shamanops_dockerfile_token }}
+      shamanops_argocd_dynenv_token: ${{ shamanops_argocd_dynenv_token }}
 ##################################################################################################
 ##################################################################################################
