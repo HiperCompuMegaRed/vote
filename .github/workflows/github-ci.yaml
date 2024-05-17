@@ -19,14 +19,6 @@ jobs:
 ## Features  -------------------------------------------------------------------------------------#
       shamanopsBusinessApprovers: 'jroca@shamanops.com'
       shamanopsTechnicalApprovers: 'flifschitz@shamanops.com'
-   # Enable Dynamics Enviroments
-      shamanopsDynamicEnvsEnabled: 'true'
-    # Dynamics Enviroments list
-      shamanopsDynamicEnvs: 'qa, audit'
-    # Dynamics Enviroments Approvals
-      shamanopsApprovalsDynamicEnvs: 'true'
-      shamanopsBusinessApproversMinimalDynamicEnvs: '1'
-      shamanopsTechnicalApproversMinimalDynamicEnvs: '1'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
