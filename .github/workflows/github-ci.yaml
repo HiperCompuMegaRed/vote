@@ -18,10 +18,10 @@ jobs:
 #-------------------------------------------------------------------------------------------------#
 ## Features  -------------------------------------------------------------------------------------#
     # Approvals
-      shamanopsBusinessApprovers: 'business-user@customer.com'
-      shamanopsTechnicalApprovers: 'technical-user@customer.com'
+      shamanopsBusinessApprovers: 'msmora@gmail.com'
+      shamanopsTechnicalApprovers: 'mmora@shamanops.com'
       shamanopsBusinessApproversMinimalProd: '1'
-      shamanopsTechnicalApproversMinimalProd: '1'
+      shamanopsTechnicalApproversMinimalProd: '0'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
