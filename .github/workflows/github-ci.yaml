@@ -25,6 +25,9 @@ jobs:
       shamanopsApprovalsProd: 'false'
     # Log level
       log_level: 'debug'
+    # Stress Check
+      stress_check_enabled: 'true'
+      stress_check_blocker: 'false'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
