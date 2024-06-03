@@ -24,7 +24,7 @@ jobs:
       shamanopsTechnicalApproversMinimalProd: '0'
       shamanopsApprovalsProd: 'false'
     # Log level
-      log_level: 'debug'
+      log_level: 'normal'
     # Stress Check
       stress_check_enabled: 'true'
       stress_check_blocker: 'false'
