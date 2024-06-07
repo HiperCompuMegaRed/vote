@@ -18,9 +18,7 @@ jobs:
 #-------------------------------------------------------------------------------------------------#
 ## Features  -------------------------------------------------------------------------------------#
     # Approvals
-      repository_metrics_enabled: 'true'
-      shamanopsApprovalsProd: 'false'
-      security_check_enabled: 'false'
+      repository_metrics_enabled: 'false'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
