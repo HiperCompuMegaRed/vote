@@ -19,6 +19,7 @@ jobs:
 ## Features  -------------------------------------------------------------------------------------#
     # Approvals
       repository_metrics_enabled: 'true'
+      log_level: 'debug'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
