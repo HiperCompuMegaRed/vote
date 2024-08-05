@@ -18,10 +18,7 @@ jobs:
 #-------------------------------------------------------------------------------------------------#
 ## Features  -------------------------------------------------------------------------------------#
     # Approvals
-      shamanopsBusinessApprovers: 'rocajp@gmail.com'
-      shamanopsTechnicalApprovers: 'lifschitzflorencia@gmail.com'
-      shamanopsBusinessApproversMinimalProd: '1'
-      shamanopsTechnicalApproversMinimalProd: '1'
+      shamanopsApprovalsProd: 'false'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
