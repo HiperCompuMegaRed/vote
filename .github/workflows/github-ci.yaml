@@ -19,6 +19,14 @@ jobs:
 ## Features  -------------------------------------------------------------------------------------#
     # Approvals
       shamanopsApprovalsProd: 'false'
+    # Repository Metrics
+      repository_metrics_enabled: 'true'
+
+    # Repository Metrics | Customizations
+      # Specify depth of metrics job (full/mid)
+      # full: Overall & Users & FilesType & CommitsInTime & CommitsLinesInTime & PRInTime
+      # mid: Overall & Users & CommitsInTime & PRInTime
+      repository_metrics_depth: 'full'
 #-------------------------------------------------------------------------------------------------#
     secrets:
       shamanops_customer_token: ${{ secrets.shamanops_customer_token }}
